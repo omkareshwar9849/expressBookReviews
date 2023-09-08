@@ -62,7 +62,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
         const review = req.body.review;
         book.reviews[username]=review;
         books[isbn]=book;
-        res.send("Review added successfully")
+        res.send("Review added/updated successfully")
     }
     else{
         res.send("Unable to find book")
